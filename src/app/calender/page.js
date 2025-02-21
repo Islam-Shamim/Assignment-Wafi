@@ -1,9 +1,10 @@
 import React from 'react'
+import Calender from '../../components/Calender'
 
-export default function Calender() {
+export default function CalenderPage() {
   return (
     <div>
-      I am Calender.
+      <Calender />
     </div>
   )
 }

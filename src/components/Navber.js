@@ -1,28 +1,27 @@
 import Image from 'next/image'
 import React from 'react'
+import { CiBellOn } from "react-icons/ci";
+import { IoIosArrowDown } from "react-icons/io";
+import { FiPlus } from "react-icons/fi";
+import { BiMessageDetail } from "react-icons/bi";
 import profile from '@/photo/shamim.jpg'
 export default function Navber() {
   return (
     <div className="navbar bg-slate-200">
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <a className="btn btn-ghost text-2xl">Calender</a>
       </div>
-      <div className="flex-none">
+      <div className="flex-none space-x-4">
+        <div>
+          <button className='px-4 py-2 flex justify-center items-center space-x-2 bg-red-400 rounded'><FiPlus /><span>Add Booking</span></button>
+        </div>
+        <div className='text-3xl' >
+          <CiBellOn />
+        </div>
         <div className="dropdown dropdown-end">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
             <div className="indicator">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-              </svg>
+              <BiMessageDetail className='text-3xl' />
               <span className="badge badge-sm indicator-item">8</span>
             </div>
           </div>
@@ -58,6 +57,9 @@ export default function Navber() {
             <li><a>Settings</a></li>
             <li><a>Logout</a></li>
           </ul>
+        </div>
+        <div className='text-xl'>
+        <IoIosArrowDown />
         </div>
       </div>
     </div>

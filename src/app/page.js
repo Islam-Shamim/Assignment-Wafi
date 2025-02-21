@@ -1,14 +1,15 @@
-
-
 import Navber from "@/components/Navber";
 import HomePage from "./home/page";
+import Menu from "./menu/page";
 
 export default function Home() {
   return (
-    <div className="bg-gray-100">
+    <div className="">
       <Navber></Navber>
-      Hello I am Shamim.
+      <div className="flex">
+      <Menu></Menu>
       <HomePage/>
+      </div>
     </div>
   );
 }

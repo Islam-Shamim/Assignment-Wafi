@@ -4,7 +4,7 @@ import Info from '../info/page'
 
 export default function Booking() {
   return (
-    <div className='mx-4 py-2'>
+    <div className='mx-4 py-2 px-4'>
       <CarNav/>
       <hr></hr>
       <Info></Info>

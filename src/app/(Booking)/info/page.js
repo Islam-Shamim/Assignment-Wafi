@@ -18,7 +18,6 @@ export default function Info() {
                             <span className="label-text font-semibold">Select Car</span>
                         </label>
                         <select className="select bg-slate-100 rounded-full">
-                            <option value='Select One' disabled>Select One</option>
                             <option value='toyota'>Toyota</option>
                             <option value='bmw'>BMW</option>
                             <option value='jaguar'>Jaguar</option>
